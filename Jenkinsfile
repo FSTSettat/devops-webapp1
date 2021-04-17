@@ -1,6 +1,5 @@
 //START-OF-SCRIPT
 //comment1
-timeout(time: 60, unit: 'SECONDS') {
     node('agent1') {
         def RELEASENAME = "webapp.war"
 
@@ -23,5 +22,4 @@ timeout(time: 60, unit: 'SECONDS') {
             archiveArtifacts "build/libs/${RELEASENAME}"
         }    
     }
-}
 //END-OF-SCRIPT
