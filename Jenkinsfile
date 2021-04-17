@@ -1,7 +1,7 @@
 //START-OF-SCRIPT
 //comment1
     node('agent1') {
-        def RELEASENAME = "webapp.war"
+        def RELEASENAME = "webapp"
 
         properties([
             pipelineTriggers([pollSCM('H/1 * * * 1-5')])
@@ -19,7 +19,7 @@
         }
 
         stage('Archive') {
-            archiveArtifacts "build/libs/${RELEASENAME}*"
+            archiveArtifacts "build/libs/${RELEASENAME}*.war"
         }    
     }
 //END-OF-SCRIPT
