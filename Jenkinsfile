@@ -19,7 +19,7 @@
         }
 
         stage('Archive') {
-            archiveArtifacts "build/libs/${RELEASENAME}"
+            archiveArtifacts "build/libs/${RELEASENAME}*"
         }    
     }
 //END-OF-SCRIPT
