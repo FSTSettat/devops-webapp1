@@ -11,7 +11,7 @@
         sh "${GRADLE_HOME}/bin/gradle tasks"
 
         stage('Clone') {
-            git url: 'https://https://github.com/FSTSettat/devops-webapp1.git'                
+            git url: 'https://github.com/FSTSettat/devops-webapp1.git'                
         }
 
         stage('Build') {
